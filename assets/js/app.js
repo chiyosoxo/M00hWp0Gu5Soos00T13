@@ -82,6 +82,28 @@ themeSwitch.addEventListener("click", () => {
 
 
 
+let darkmode1 = localStorage.getItem('darkmode')
+const themeSwitch1 = document.getElementById('theme-switch-1')
+
+const enableDarkmode1 = () => {
+    document.body.classList.add('darkmode')
+    localStorage.setItem('darkmode', 'active')
+}
+
+const disableDarkmode1 = () => {
+    document.body.classList.remove('darkmode')
+    localStorage.setItem('darkmode', null)
+}
+
+if(darkmode === "active") enableDarkmode1()
+
+themeSwitch1.addEventListener("click", () => {
+    darkmode = localStorage.getItem('darkmode')
+    darkmode !== "active" ? enableDarkmode1() : disableDarkmode1()
+})
+
+
+
 
 
 // POPUP
@@ -100,22 +122,8 @@ themeSwitch.addEventListener("click", () => {
     });
 
 
+let subMenu = document.getElementById("subMenu");
 
-// LOGIN 
-
-
-document.querySelector("#show-login-pop").addEventListener('click', function(){
-    document.querySelector(".login-form").style.display = "block";
-});
-
-document.querySelector(".login-form .close-btn").addEventListener('click', function(){
-    document.querySelector(".login-form").style.display = "none";
-});
-
-document.querySelector("#show-login-pop").addEventListener('click', function(){
-    document.querySelector(".close-btn").classList.add('active');
-});
-
-document.querySelector(".entry-popup .close-btn").addEventListener('click', function(){
-    document.querySelector(".close-btn").classList.remove('active');
-});
+function toggleMenu(){
+    subMenu.classList.toggle("open-menu")
+};

@@ -41,7 +41,7 @@
                             </ul>
                         </div>
                         <div class="theme" title="Theme Switch">
-                            <button id="theme-switch">
+                            <button class="btn-mode" id="theme-switch">
                                 <span><i class="fa fa-sun-o" style="font-size: 11px;"></i>DayMode</span>
                                 <span><i class="bi bi-moon-stars-fill"></i>DarkTheme</span>
                             </button>
@@ -65,7 +65,7 @@
                                     <div class="dropdwn-t-wrap">
                                         <a href="#" style="color: red;"><i class="bi bi-fire" style="color: red;"></i> Visual Novel</a>
                                         <a href="#" style="color: rgb(255, 93, 93);"><i class="bi bi-fire" style="color: rgb(255, 104, 104);"></i> Simulation</a>
-                                        <a href="#" style="color: rgb(255, 142, 43);"><i class="bi bi-fire" style="color: rgb(255, 142, 43):"></i> Animated</a>
+                                        <a href="#" style="color: rgb(255, 142, 43);"><i class="bi bi-fire" style="color: rgb(255, 142, 43);"></i> Animated</a>
                                         <a href="#"><i class="bi bi-fire"></i> PixelArt</a>
                                         <a href="#" style="color: var(--tags-penting);">Android</a>
                                         <a href="#" style="color: var(--tags-penting);">Windows</a>
@@ -130,7 +130,39 @@
                             </a>
                         </div>
                     </div>
-                    <i class="bi bi-list"></i>
+                    <div class="mobile-nav">
+                        <button onclick="toggleMenu()"><i class="bi bi-list"></i></button>
+                        <div class="menu-mobile" id="subMenu">
+                            <div class="menu-m-wrap">
+                                <h2>MENU</h2>
+                                <div class="content-m-menu">
+                                    <a href="#">SHOP</a>
+                                    <a href="#">FORUM</a>
+                                    <a href="#">REQUEST</a>
+                                    <a href="#">REPORT</a>
+                                    <div class="wrpper-advan">
+                                        <div class="theme2" title="Theme Switch">
+                                            <button class="btn-mode" id="theme-switch-1">
+                                                <span><i class="fa fa-sun-o" style="font-size: 11px;"></i>DayMode</span>
+                                                <span><i class="bi bi-moon-stars-fill"></i>NightMode</span>
+                                            </button>
+                                        </div>
+                                        <div class="category-wrap2">
+                                            <a title="Category"><i class="bi bi-translate"></i> Language</a>
+                                            <div class="dropdwn-category2">
+                                                <div class="dropdwn-c-wrap2">
+                                                    <a href="#">Indonesia</a>
+                                                    <a href="#">Japanese</a>
+                                                    <a href="#">China</a>
+                                                    <a href="#">English</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- <div class="lastnav">
