@@ -108,6 +108,7 @@ themeSwitch1.addEventListener("click", () => {
 
 // POPUP
 
+
     window.addEventListener("load", function(){
         this.setTimeout(
             function open(event){
@@ -120,6 +121,10 @@ themeSwitch1.addEventListener("click", () => {
     document.querySelector("#close-btn-iklan").addEventListener("click", function(){
         document.querySelector(".iklan-popup").style.display = "none";
     });
+
+
+
+
 
 
 let subMenu = document.getElementById("subMenu");
