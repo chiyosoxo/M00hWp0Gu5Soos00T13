@@ -809,10 +809,10 @@
         border-radius: 5px;
         border: 1px #363a4352 solid;
         box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
-        animation-name: slide-top, fade;
+        animation-name: fade;
         animation-duration: 0.20s;
         animation-fill-mode: forwards;
-        z-index: 2;
+        background-color: var(--base-color);
     }
 
     .dropdwn-c-wrap2 {
@@ -1080,18 +1080,20 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
 }
 
 .content-m-menu > a {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40px;
+    height: 35px;
     font-size: 17px;
     text-decoration: none;
     color: var(--main-font-color);
-    /* background-color: var(--color-second); */
+    background-color: var(--base-second);
+    width: 190px;
+    border-radius: 10px;
 }
 
 .content-m-menu > a:hover {
